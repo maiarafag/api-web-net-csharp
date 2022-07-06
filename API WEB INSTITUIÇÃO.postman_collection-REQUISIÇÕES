@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "a5b2deed-56ee-4d3c-9a7a-089cf832bacb",
+		"name": "API WEB INSTITUIÇÃO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21636570"
+	},
+	"item": [
+		{
+			"name": "CONSULTA TODOS OS ALUNOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/aluno",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA TODAS AS TURMAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/turma",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA ALUNO PELO ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/aluno/2",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"aluno",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CONSULTA TURMA PELO ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/turma/1",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"turma",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INCLUIR ALUNO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 6,\r\n  \"nome\": \"Maria\",\r\n  \"dataNascimento\": \"1981-09-17T00:00:00.000Z\",\r\n  \"sexo\": \"F\",\r\n  \"turma_Id\": 3,\r\n  \"totalFaltas\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/aluno",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INCLUIR TURMA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"nome\": \"Turma Brown\",\r\n        \"ativo\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/turma",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXCLUIR ALUNO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/aluno/6",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"aluno",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EXCLUIR TURMA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/turma/4",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"turma",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATUALIZAR ALUNO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"id\": 1,\r\n  \"nome\": \"Maria Eduarda\",\r\n  \"dataNascimento\": \"2000-10-15T00:00:00.000Z\",\r\n  \"sexo\": \"F\",\r\n  \"turma_Id\": 1,\r\n  \"totalFaltas\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/aluno/1",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"aluno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATUALIZAR TURMA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"nome\": \"Turma White\",\r\n  \"ativo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://instituicao20220704163344.azurewebsites.net/api/turma/3",
+					"protocol": "https",
+					"host": [
+						"instituicao20220704163344",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"turma",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
